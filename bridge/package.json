@@ -1,0 +1,16 @@
+{
+  "name": "@morsekey/bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:sim": "tsx watch src/index.ts --sim",
+    "start": "tsx src/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@morsekey/shared": "*",
+    "serialport": "*"
+  }
+}

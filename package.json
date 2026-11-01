@@ -1,0 +1,21 @@
+{
+  "name": "morsekey-starter",
+  "private": true,
+  "type": "module",
+  "workspaces": ["shared", "backend", "bridge", "frontend"],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm test --workspaces --if-present",
+    "dev:backend": "npm run dev -w backend",
+    "dev:bridge": "npm run dev:sim -w bridge",
+    "dev:frontend": "npm run dev -w frontend",
+    "dev:sim": "concurrently -k -n backend,bridge,frontend -c blue,green,magenta \"npm run dev:backend\" \"npm run dev:bridge\" \"npm run dev:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "*",
+    "tsx": "*",
+    "typescript": "*",
+    "vitest": "*",
+    "@types/node": "*"
+  }
+}

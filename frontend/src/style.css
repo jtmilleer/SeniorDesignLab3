@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f2f2f2; color: #000; }
+main { max-width: 32rem; margin: 4rem auto; padding: 0 1rem; }
+h1 { margin-bottom: 0.25rem; }
+.hint { color: #4a4d50; }
+.badge { margin: 1.5rem 0 0.5rem; padding: 1.25rem; border-radius: 0.5rem; font-size: 1.5rem; font-weight: bold; text-align: center; }
+.pressed { background: #ffcd00; color: #000; }
+.released { background: #000; color: #fff; }

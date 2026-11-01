@@ -1,0 +1,3 @@
+# The frames travel over UART0, the same port the boot messages use.
+# Keep the log quiet once the app runs.
+CONFIG_LOG_DEFAULT_LEVEL_NONE=y

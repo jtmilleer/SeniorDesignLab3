@@ -1,0 +1,14 @@
+# Starter stub: runs only the backend.
+# TODO(student, Week 3): one command (`docker compose up`) should start the
+# backend and the web page. Add what is missing.
+services:
+  backend:
+    image: node:22
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      DB_PATH: /app/data/morsekey.db
+    command: sh -c "npm ci && npm run start -w backend"
+    ports:
+      - "3000:3000"
